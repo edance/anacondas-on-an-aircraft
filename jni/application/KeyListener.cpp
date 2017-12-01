@@ -11,15 +11,15 @@ bool KeyListener::on_key(const SDL_KeyboardEvent &event)
       case SDLK_w:
 		  _up = event.type == SDL_KEYDOWN;
 		  break;
- 
+
       case SDLK_a:
 		  _left = event.type == SDL_KEYDOWN;
 		  break;
- 
+
       case SDLK_s:
 		  _down = event.type == SDL_KEYDOWN;
 		  break;
- 
+
       case SDLK_d:
 		  _right = event.type == SDL_KEYDOWN;
 		  break;

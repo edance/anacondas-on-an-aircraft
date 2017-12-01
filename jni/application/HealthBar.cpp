@@ -54,12 +54,12 @@ void HealthBar::render()
 }
 
 
-void HealthBar::setHealth(const float amount_) 
+void HealthBar::setHealth(const float amount_)
 {
 	_currentHealth = amount_;
 }
 
-void HealthBar::setMaxHealth(const float amount_) 
+void HealthBar::setMaxHealth(const float amount_)
 {
 	_maxHealth = amount_;
 }

@@ -37,16 +37,16 @@ void Score::render()
 		offset += 15.0f;
 		vr.unapply_Texture();
 	}
-	
+
 }
 
 
-void Score::changeScore(const int amount_) 
+void Score::changeScore(const int amount_)
 {
 	_currentScore += amount_;
 }
 
-void Score::resetScore() 
+void Score::resetScore()
 {
 	_currentScore = 0;
 }

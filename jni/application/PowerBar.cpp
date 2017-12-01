@@ -38,12 +38,12 @@ void PowerBar::render()
 }
 
 
-const float PowerBar::getAmount() 
+const float PowerBar::getAmount()
 	const
 {
 	return _currentAmount;
 }
-void  PowerBar::changeAmount(const float amount_) 
+void  PowerBar::changeAmount(const float amount_)
 {
 	_currentAmount += amount_;
 	if (_currentAmount > _maxAmount) _currentAmount = _maxAmount;

@@ -75,9 +75,9 @@ bool Game_Object::collide(const Game_Object *obj) const
 {
 	const Vector2f obj_size = obj->get_size();
 
-	const Vector2f dist_vec = m_position - obj->get_position() + 
+	const Vector2f dist_vec = m_position - obj->get_position() +
 		0.5f * (m_size - obj_size);
-	
+
 	const float distX = (dist_vec.x < 0) ? (-1.0f) * dist_vec.x : dist_vec.x;
 	const float distY = (dist_vec.y < 0) ? (-1.0f) * dist_vec.y : dist_vec.y;
 

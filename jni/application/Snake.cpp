@@ -115,9 +115,9 @@ void Snake::move(const Point2f attackPoint, const list<Seat *>& seats)
 		{
 			const Vector2f seat_size = (*it)->get_size();
 
-			Vector2f dist_vec = posX - (*it)->get_position() + 
+			Vector2f dist_vec = posX - (*it)->get_position() +
 			0.5f * (man_size - seat_size);
-	
+
 			float distX = (dist_vec.x < 0) ? (-1.0f) * dist_vec.x : dist_vec.x;
 			float distY = (dist_vec.y < 0) ? (-1.0f) * dist_vec.y : dist_vec.y;
 
@@ -131,10 +131,10 @@ void Snake::move(const Point2f attackPoint, const list<Seat *>& seats)
 					break;
 				}
 			}
-		
-			dist_vec = posY - (*it)->get_position() + 
+
+			dist_vec = posY - (*it)->get_position() +
 			0.5f * (man_size - seat_size);
-	
+
 			distX = (dist_vec.x < 0) ? (-1.0f) * dist_vec.x : dist_vec.x;
 			distY = (dist_vec.y < 0) ? (-1.0f) * dist_vec.y : dist_vec.y;
 

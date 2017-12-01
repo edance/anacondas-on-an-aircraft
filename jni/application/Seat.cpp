@@ -59,7 +59,7 @@ bool Seat::collideX(const Game_Object *obj) const
 	const Vector2f size = get_size();
 	const Vector2f obj_size = obj->get_size();
 
-	float dist_X = get_position().x - obj->get_position().x + 
+	float dist_X = get_position().x - obj->get_position().x +
 		0.5f * (get_size().x - obj->get_size().x);
 
 	dist_X = (dist_X < 0) ? (-1.0f) * dist_X : dist_X;
@@ -75,7 +75,7 @@ bool Seat::collideY(const Game_Object *obj) const
 	const Vector2f size = get_size();
 	const Vector2f obj_size = obj->get_size();
 
-	float dist_Y = get_position().y - obj->get_position().y + 
+	float dist_Y = get_position().y - obj->get_position().y +
 		0.5f * (get_size().y - obj->get_size().y);
 
 	dist_Y = (dist_Y < 0) ? (-1.0f) * dist_Y : dist_Y;

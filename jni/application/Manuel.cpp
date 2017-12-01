@@ -66,18 +66,18 @@ void Manuel::move(const float &move_x, const float &move_y, const list<Seat *>& 
 	{
 		const Vector2f seat_size = (*it)->get_size();
 
-		Vector2f dist_vec = posX - (*it)->get_position() + 
+		Vector2f dist_vec = posX - (*it)->get_position() +
 		0.5f * (man_size - seat_size);
-	
+
 		float distX = (dist_vec.x < 0) ? (-1.0f) * dist_vec.x : dist_vec.x;
 		float distY = (dist_vec.y < 0) ? (-1.0f) * dist_vec.y : dist_vec.y;
 
 		if ((0.5f) * (seat_size.x + man_size.x) - 5.0f > distX && (0.5f) * (seat_size.y + man_size.y) - 5.0f > distY)
 			moveX = 0.0f;
-		
-		dist_vec = posY - (*it)->get_position() + 
+
+		dist_vec = posY - (*it)->get_position() +
 		0.5f * (man_size - seat_size);
-	
+
 		distX = (dist_vec.x < 0) ? (-1.0f) * dist_vec.x : dist_vec.x;
 		distY = (dist_vec.y < 0) ? (-1.0f) * dist_vec.y : dist_vec.y;
 
@@ -90,7 +90,7 @@ void Manuel::move(const float &move_x, const float &move_y, const list<Seat *>& 
 
 	if (posX.x < 0.0f || posX.x > 590.0f)
 		moveX = 0.0;
-	
+
 	Game_Object::move(moveX, moveY);
 }
 
@@ -117,12 +117,12 @@ const bool Manuel::hasFire() const
 {
 	return _hasFire;
 }
-	
+
 const bool Manuel::hasGrenade() const
 {
 	return _hasGrenade;
 }
-	
+
 void Manuel::setFire(const bool fire_)
 {
 	_hasFire = fire_;
